@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Page Title</title>
+        <link rel="stylesheet" type="text/css" href="calc.css">
+        <script type="text/javascript" src="calc.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="btn_edit">
+                <div class="bg_btn">
+                    <p>background :</p>
+                    <input type="color" id="bg_color" value="#cccccc">
+                    <button onclick="background()">OK</button>
+
+                </div>
+                <button class="btn">Button</button>
+            </div>
+            <div class="settings">
+                <h1>Settings Button</h1>
+                <div class="item">
+                    <h2>Text</h2>
+
+                    <p>Text :</p>
+                    <input type="text" class="input" id="txt" value="Button">
+
+                    <p>Font Size :</p>
+                    <input type="number" class="input" id="size_font" value="16" placeholder="16">
+
+                    <p>Font Familly :</p>
+                    <input type="text" class="input" id="familly_font" value="Arial">
+
+                    <p>Font Weight :</p>
+                    <select id="weight_font" >
+                        <option>100</option>
+                        <option>200</option>
+                        <option>300</option>
+                        <option>400</option>
+                        <option>500</option>
+                        <option>600</option>
+                        <option>700</option>
+                        <option>800</option>
+                        <option>900</option>
+                        <option>bold</option>
+                        <option>bolder</option>
+                    </select>
+
+                    <p value="Center">Text Align :</p>
+                    <select id="text_align">
+                        <option>center</option>
+                        <option>left</option>
+                        <option>right</option>
+                        <option>start</option>
+                        <option>end</option>
+                    </select>
+
+                    <p>Font Style :</p>
+                    <select id="style_font">
+                        <option>normal</option>
+                        <option>italic</option>
+                        <option>oblique</option>
+                    </select>
+
+                    <p>Text Color :</p>
+                    <input type="color" class="color_btn" id="font_color">
+                    <button class="btn_edit_color_text" onclick="btn_click()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    <input type="text" value="#000000" class="color_text" id="font_color_txt" >
+
+
+                    <p>Background :</p>
+                    <input type="color" class="color_btn" id="bg_btn" value="#ffffff">
+                    <input type="text" class="color_text" id="bg_txt" value="#ffffff">
+                    <button class="btn_edit_color_text" onclick="bg_txt()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
+                </div>
+
+                <div class="item">
+                    <h2>Size</h2>
+
+                    <p>Width :</p>
+                    <input type="number" class="input" id="padding_width" value="100">
+
+                    <p>Height :</p>
+                    <input type="number" class="input" id="padding_height" value="30">
+                </div>
+
+                <div class="item">
+                    <h2>Border</h2>
+
+                    <p>Border Radius :</p>
+                    <input type="number" class="input" id="border_rad" value="10">
+
+                    <p>Border Size :</p>
+                    <input type="number" class="input" id="border_weight" value="3">
+
+                    <p>Border Color :</p>
+                    <input type="color" class="color_btn" id="border_color_btn_">
+                    <input type="text" class="color_text" id="border_color_txt_" value="#000000">
+                    <button class="btn_edit_color_text" onclick="border()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
+                    <p>Border Style :</p>
+                    <select id="border_style">
+                        <option>solid</option>
+                        <option>dotted</option>
+                        <option>inset</option>
+                        <option>outset</option>
+                        <option>dashed</option>
+                        <option>groove</option>
+                        <option>none</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <h2>Box Shadow</h2>
+
+                    <p>Vertical Position :</p>
+                    <input type="number" class="input" id="height_shadow" value="0" placeholder="0">
+
+                    <p>Horizontal Position :</p>
+                    <input type="number" class="input" id="width_shadow" value="0" placeholder="0">
+
+                    <p>Blur Radius :</p>
+                    <input type="number" class="input" id="blur_shadow" value="0" placeholder="0">
+
+                    <p>Spread Radius :</p>
+                    <input type="number" class="input" id="spread_shadow" value="0" placeholder="0">
+
+                    <p>Box Shadow Color :</p>
+                    <input type="color" class="color_btn" id="shadow_color_btn">
+                    <input type="text" class="color_text" id="shadow_color_txt" value="#000000">
+                    <button class="btn_edit_color_text" onclick="shadow()" ><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
+                </div>
+
+                <div class="item">
+                    <h2>Text Shadow</h2>
+
+                    <p>Vertical Position :</p>
+                    <input type="number" class="input" id="txt_width" value="0" placeholder="0">
+
+                    <p>Horizontal Position :</p>
+                    <input type="number" class="input" id="txt_height" value="0" placeholder="0">
+
+                    <p>Blur Radius :</p>
+                    <input type="number" class="input" id="blur_txt" value="0" placeholder="0">
+
+                    <p>Text Shadow Color :</p>
+                    <input type="color" class="color_btn" id="shadow_txt_btn">
+                    <input type="text" class="color_text" id="shadow_txt_txt" value="#000000">
+                    <button class="btn_edit_color_text" onclick="shadow_txt()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
+                </div>
+
+
+            </div>
+            <div class="d">
+                <button onclick="edit()">Edit</button>
+                <button onclick="get_code()">Get Code</button>
+
+            </div>
+            <div class="code">
+                <p>
+                    <span>.btn</span>
+                    <span>{</span>
+                </p>
+                <div class="font_size_code">font-size : 16px;</div>
+                
+                <div class="font_familly_code">font-familly : Arial;</div>
+                
+                <div class="font_weight_code">font-weight : 100;</div>
+                
+                <div class="font_align_code">text-align : center;</div>
+                
+                <div class="font_style_code">font-style : normal;</div>
+
+                <div class="color_code">color : #000000;</div>
+                
+                <div class="bg_code">background-color : #ffffff;</div>
+
+                <div class="width_code">width :  100px;</div>
+
+                <div class="height_code">height : 30px;</div>
+
+                <div class="border_code">border : 3px solid #000000;</div>
+                
+                <div class="border_rad_code">border-radius : 10px;</div>
+
+                <div class="box_shadow_code">box-shadow : 0px 0px 0px 0px #000000;</div>
+
+                <div class="text_shadow_code">text-shadow : 0px 0px 0px #000000;</div>
+                <p>}</p>
+            </div>
+        </div>
+    </body>
+</html>
